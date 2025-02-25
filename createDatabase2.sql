@@ -10,7 +10,8 @@ USE test;
 # Text: VARCHAR(länge)
 # Datum: DATE
 
-# Tabelle anlegen
+# Tabelle anlegen DDL
+# Select usw ist DML
 CREATE TABLE Kunden
     # AttributsName    Datentyp       Bedingung
 (
