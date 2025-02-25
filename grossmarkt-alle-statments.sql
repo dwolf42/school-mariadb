@@ -551,9 +551,10 @@ USE test;
 # Datum: DATE
 
 # Tabelle anlegen
+DROP TABLE IF EXISTS Kunden;
 CREATE TABLE Kunden
-(
     # AttributsName    Datentyp       Bedingung
+(
     ID                 INT            AUTO_INCREMENT,
     Vorname            VARCHAR(50)    NULL,
     Nachname           VARCHAR(50)    NOT NULL, # NOT NULL = Pflichtfeld/-attribut
@@ -569,6 +570,7 @@ CREATE TABLE Kunden
 )
     Engine=InnoDB;
 
+DROP TABLE IF EXISTS Bestellungen;
 CREATE TABLE Bestellungen
 (
     # AttributsName    Datentyp       Bedingung
