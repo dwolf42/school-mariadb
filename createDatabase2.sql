@@ -36,7 +36,7 @@ CREATE TABLE Bestellungen
 (
     Bnr                 INT             AUTO_INCREMENT,
     KNr                 INT             NOT NULL,
-    Datum               DATE            NULL,
+    Datum               DATE            NULL
     #PRIMARY KEY(Bnr),
     #FOREIGN KEY(Knr) REFERENCES Kunden(ID) ON DELETE CASCADE ON UPDATE CASCADE # wie kann ich eine referenzielle Integrität sicherstellen?
     # REFERENCES Table(Attr) stellt referenzielle Integrität sicher
