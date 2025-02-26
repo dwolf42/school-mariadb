@@ -525,9 +525,6 @@ VALUES (@KID,
         (SELECT Preis FROM artikel WHERE `Name` = 'Chai'),
         2,
         0);
-#
-INSERt into positionen(BestellNr, ArtikelNr, Preis, Anzahl, Rabatt)
-
 
 # Alternativ zu dem Vorherigen:
 INSERT INTO positionen(BestellNr, ArtikelNr, Preis, Anzahl, Rabatt)
